@@ -9,7 +9,7 @@ body {
     width: 98%;
     top: 0;
     height: 38px;
-    padding: 20px;
+    padding: 20px 30px;
     background-color: #e8d7d7;
     display: flex;
     justify-content: space-between;
@@ -104,4 +104,37 @@ body {
   .recipe-title{
     color: purple;
     font-size: 22px;
+  }
+  @media only screen and (max-width: 750px) {
+    header{
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    header h1{
+      font-size: 24px;
+      margin-left: 24px;
+    }
+    header .search-form-container{
+      padding: 10px 2px;
+      display: flex;
+      margin: 10px 5px;
+    }
+    #searchInput{
+      width: 150px;
+    }
+    #searchBtn{
+      padding: 8px;
+    }
+    
+    main {
+      display: block;
+    }
+   main h2{
+    padding: 10px 50px;
+   }
+   #recipeDetailsContainer{
+    margin: 10px;
+   }
+  
   }
